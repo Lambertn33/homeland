@@ -1,5 +1,15 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Home from "./components/Home";
+
 const App: React.FC = () => {
-  return <h1 className="text-xl text-red-300 font-bold underline">Hello world!</h1>;
+  return (
+    <div className="bg-white max-w-[90rem] mx-auto">
+      <Header />
+      <Home />
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
