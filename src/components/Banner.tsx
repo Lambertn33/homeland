@@ -4,7 +4,7 @@ import image from "../assets/img/house-banner.png";
 
 const Banner: React.FC = () => {
   return (
-    <section className="h-full max-h-[640px]mb-8 lg:mb-24">
+    <section className="h-full max-h-[640px] mb-8 lg:mb-24">
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="lg:ml-8 ml-4 flex flex-col flex-1 mx-auto lg:max-w-[520px] items-center justify-center gap-3 lg:items-start mb-8">
           <h1 className="text-5xl font-extrabold">

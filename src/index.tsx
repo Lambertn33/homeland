@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import HousesContextProvider from "./store/houses-context";
 import reportWebVitals from "./reportWebVitals";
 
 const router = createBrowserRouter([
@@ -17,7 +18,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HousesContextProvider>
+      <RouterProvider router={router} />
+    </HousesContextProvider>
   </React.StrictMode>
 );
 
