@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { housesData } from "../data/Houses";
 import { HouseInterface } from "../interfaces/House";
+import { HouseContextInterface } from "../interfaces/HouseContext";
 
-export const HousesContext = React.createContext({
-  houses: [] as HouseInterface[],
+export const HousesContext = React.createContext<HouseContextInterface>({
+  houses: [],
   isLoading: false,
 });
 
