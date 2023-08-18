@@ -5,12 +5,17 @@ import "./index.css";
 import App from "./App";
 import HousesContextProvider from "./store/houses-context";
 import reportWebVitals from "./reportWebVitals";
+import HouseDetails from "./pages/HouseDetails";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
+  {
+    path: "/:id",
+    element: <HouseDetails/>
+  }
 ]);
 
 const root = ReactDOM.createRoot(

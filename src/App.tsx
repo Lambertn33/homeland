@@ -1,16 +1,14 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Home from "./components/Home";
+
 import Houses from "./pages/Houses";
+import Wrapper from "./pages/Wrapper";
 
 const App: React.FC = () => {
   return (
-    <div className="bg-white max-w-[90rem] mx-auto">
-      <Header />
+    <Wrapper>
       <Home />
       <Houses />
-      <Footer />
-    </div>
+    </Wrapper>
   );
 };
 

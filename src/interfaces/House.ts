@@ -1,3 +1,5 @@
+import React from "react";
+
 export enum HouseType {
   House = "House",
   Appartment = "Appartment",
@@ -23,5 +25,10 @@ export interface HouseInterface {
   surface: string;
   year: string;
   price: string;
-  agent: HouseAgent
+  agent: HouseAgent;
+}
+
+export interface HouseDetailsIconsPropsInterface {
+  icon: React.ReactNode;
+  count: string
 }
