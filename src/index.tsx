@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App";
 import HousesContextProvider from "./store/houses-context";
 import reportWebVitals from "./reportWebVitals";
-import HouseDetails from "./pages/HouseDetails";
+import House from "./pages/House";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/:houseId",
-    element: <HouseDetails/>
+    element: <House/>
   }
 ]);
 
